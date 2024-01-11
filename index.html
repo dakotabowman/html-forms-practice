@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width" />
+        <title>Forms-Assessment</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <style>
+        main {
+            margin-top: 10px;
+        }
+        input {
+            width: 90%;
+            margin-left: 2%;
+            margin-bottom: 15px;
+            display: block;
+        }
+        label {
+            margin-left: 2%;
+            display: block;
+        }
+        textarea {
+            display: block;
+            margin-left: 2%;;
+            width: 90%;
+            height: 150px;
+        }
+        button {
+            margin-left: 2%;
+            margin-top: 15px;
+        }
+      </style>
+    </head>
+    <body>
+       <main>
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input id="name" type="text" name="name" autofocus="on" required/>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input id="email" type="email" name="email" required/>
+            </div>
+            <div>
+                <label for="textarea">Your message:</label>
+                <textarea id="textarea" name="message" maxlength="200" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+       </main> 
+    </body>
+</html>
